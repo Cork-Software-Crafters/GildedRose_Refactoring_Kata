@@ -9,11 +9,11 @@ public class GildedRoseTest {
     @Test
     public void foo() {
         Item[] items = new Item[]{new Item("foo", 0, 0)};
-        GildedRose app = new GildedRose(items);
+        GildedRose gildedRose = new GildedRose(items);
 
-        app.updateQuality();
+        gildedRose.updateQuality();
 
-        assertThat(app.items[0].name).isEqualTo("fixme");
+        assertThat(gildedRose.items[0].name).isEqualTo("fixme");
     }
 
 }
