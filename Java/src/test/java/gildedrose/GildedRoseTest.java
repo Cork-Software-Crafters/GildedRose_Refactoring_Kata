@@ -59,12 +59,12 @@ public class GildedRoseTest {
 
     @Test
     public void Sulfuras_never_has_to_be_sold_or_decreases_in_quality() {
-        Item[] items = new Item[]{new Item("Sulfuras, Hand of Ragnaros", 1, 10)};
+        Item[] items = new Item[]{new Item("Sulfuras, Hand of Ragnaros", 1, 80)};
         GildedRose gilgedRose = new GildedRose(items);
 
         gilgedRose.updateQuality();
 
-        assertThat(items[0].quality).isEqualTo(10);
+        assertThat(items[0].quality).isEqualTo(80);
     }
 
     @Test

@@ -46,11 +46,11 @@ describe('Gilded Rose', function () {
     });
 
     it('Sulfuras never has to be sold or decreases in quality ', function () {
-        const gilgedRose = new GildedRose([new Item('Sulfuras, Hand of Ragnaros', 1, 10)]);
+        const gilgedRose = new GildedRose([new Item('Sulfuras, Hand of Ragnaros', 1, 80)]);
 
         const items = gilgedRose.updateQuality();
 
-        expect(items[0].quality).to.equal(10);
+        expect(items[0].quality).to.equal(80);
     });
 
     it('Backstage passes increases in quality by 2 when there are 10 days or less', function () {
