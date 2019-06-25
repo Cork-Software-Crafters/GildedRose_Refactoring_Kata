@@ -7,13 +7,13 @@ import static org.assertj.core.api.Assertions.*;
 public class GildedRoseTest {
 
     @Test
-    public void foo() {
-        Item[] items = new Item[]{new Item("foo", 0, 0)};
+    public void should_update_quality_of_an_item() {
+        Item[] items = new Item[]{new Item("an item", 0, 0)};
         GildedRose gildedRose = new GildedRose(items);
 
         gildedRose.updateQuality();
 
-        assertThat(gildedRose.items[0].name).isEqualTo("fixme");
+        assertThat(gildedRose.items[0].name).isEqualTo("an item");
     }
 
 }
