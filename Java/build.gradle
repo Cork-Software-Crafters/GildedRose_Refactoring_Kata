@@ -6,6 +6,17 @@ version = '1.0.0'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.4.0'
+    }
+}
+
+apply plugin: 'info.solidsoft.pitest'
+
 repositories {
     mavenCentral()
 }
