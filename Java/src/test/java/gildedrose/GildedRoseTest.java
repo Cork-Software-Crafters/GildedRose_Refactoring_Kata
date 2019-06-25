@@ -11,9 +11,9 @@ public class GildedRoseTest {
     public void should_update_quality_of_an_item() {
         CombinationApprovals.verifyAllCombinations(
                 this::updateQuality,
-                new String[]{"an item"},
+                new String[]{"an item", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros"},
                 new Integer[]{0},
-                new Integer[]{0});
+                new Integer[]{0, 1});
     }
 
     private String updateQuality(String name, int sellIn, int quality) {
