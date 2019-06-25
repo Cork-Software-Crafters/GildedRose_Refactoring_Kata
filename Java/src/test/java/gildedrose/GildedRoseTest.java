@@ -1,8 +1,7 @@
 package gildedrose;
 
+import org.approvaltests.Approvals;
 import org.junit.Test;
-
-import static org.assertj.core.api.Assertions.*;
 
 public class GildedRoseTest {
 
@@ -13,7 +12,7 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        assertThat(gildedRose.items[0].name).isEqualTo("an item");
+        Approvals.verify(gildedRose.items[0].name);
     }
 
 }
