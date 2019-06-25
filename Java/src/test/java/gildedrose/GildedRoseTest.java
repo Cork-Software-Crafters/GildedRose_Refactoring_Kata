@@ -48,6 +48,17 @@ public class GildedRoseTest {
     }
 
     @Test
+    public void Aged_brie_when_sellIn_expires() {
+        Item[] items = new Item[]{new Item("Aged Brie", 0, 10)};
+        GildedRose gilgedRose = new GildedRose(items);
+
+        gilgedRose.updateQuality();
+
+        assertThat(items[0].sellIn).isEqualTo(-1);
+        assertThat(items[0].quality).isEqualTo(12);
+    }
+
+    @Test
     public void the_quality_of_an_item_is_never_more_than_50() {
         Item[] items = new Item[]{new Item("Aged Brie", 1, 50)};
         GildedRose gilgedRose = new GildedRose(items);
