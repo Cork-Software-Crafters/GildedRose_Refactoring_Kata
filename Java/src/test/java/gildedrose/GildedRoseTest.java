@@ -1,8 +1,10 @@
 package gildedrose;
 
 import org.approvaltests.Approvals;
+import org.approvaltests.reporters.UseReporter;
 import org.junit.Test;
 
+@UseReporter(MeldReporter.class)
 public class GildedRoseTest {
 
     @Test
@@ -12,7 +14,7 @@ public class GildedRoseTest {
 
         gildedRose.updateQuality();
 
-        Approvals.verify(gildedRose.items[0].name);
+        Approvals.verify(gildedRose.items[0]);
     }
 
 }
