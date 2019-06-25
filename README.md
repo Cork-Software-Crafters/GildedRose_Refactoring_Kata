@@ -1,6 +1,10 @@
 Gilded Rose Kata
 ================
-https://github.com/Cork-Software-Craftsmanship-Community/GildedRose_Refactoring_Kata
+
+[Gilded Rose Kata](https://github.com/Cork-Software-Craftsmanship-Community/GildedRose_Refactoring_Kata)
+
+[Gilded Rose Approval Kata](https://github.com/Cork-Software-Craftsmanship-Community/GildedRose_Refactoring_Kata/tree/approval-kata)
+
 
 # Background #
 
